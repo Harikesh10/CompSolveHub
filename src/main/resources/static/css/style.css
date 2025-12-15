@@ -1,0 +1,229 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+	
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* ===== DARK MODE ===== */
+
+body.dark-mode {
+    background-color: #020617;
+    color: white;
+}
+body.dark-mode .hero-title{
+	color: white;
+}
+
+body.dark-mode .quote-marquee{
+	color: white;
+}
+
+body.dark-mode .navbar {
+    background-color: #020617 !important;
+}
+
+body.dark-mode .nav-link,
+body.dark-mode .navbar-brand {
+    color: #e5e7eb !important;
+}
+
+body.dark-mode .bg-white {
+    background-color: #020617 !important;
+}
+
+body.dark-mode .bg-light {
+    background-color: #020617 !important;
+}
+
+body.dark-mode .card {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+body.dark-mode footer {
+    background-color: #0f172a;
+}
+
+body.dark-mode .text-muted {
+    color: #9ca3af !important;
+}
+
+
+/* ===== CHATBOT FLOATING WIDGET ===== */
+
+#chatbot-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+#chatbot-toggle {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    height: 520px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+#chatbot-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+/* Full viewport section */
+.full-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+.hero {
+    min-height: 100vh;
+    
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 span {
+    color: #fde047;
+}
+
+.section {
+    padding: 80px 0;
+}
+/* Marquee quote styling */
+.quote-marquee {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+
+.card-hover {
+    transition: all 0.3s ease;
+    border-radius: 16px;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    border: none;
+}
+
+.btn-gradient:hover {
+    opacity: 0.9;
+}
+/*Style for the animation*/
+/* Floating animation below Start Resolving */
+
+.floating-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 28px;
+    color: #6c63ff;
+    opacity: 0.8;
+}
+
+.floating-icons i {
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-icons i:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.floating-icons i:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Style for complaint cards*/
+
+.complaint-icon {
+    font-size: 32px;
+    color: #0d6efd;
+    margin-bottom: 12px;
+}
+
+
+footer {
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* ===== ADMIN DASHBOARD ===== */
+
+.admin-body {
+    background-color: #f8fafc;
+}
+
+.stat-card {
+    border-radius: 14px;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.update-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
